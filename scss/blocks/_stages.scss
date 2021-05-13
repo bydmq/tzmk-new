@@ -1,0 +1,103 @@
+.stages{
+    padding-top: 130px;
+    padding-bottom: 95px;
+    &__title{
+        margin-bottom: 80px;
+        color: $color-accent;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        cursor: pointer;
+        &:hover{
+            & .stages__item-number{
+                background-color: $color-yellow;
+                color: $color-primary;
+            }
+        }
+    }
+    &__item-number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-right: 40px;
+        background-color: $color-primary;
+        font-weight: 600;
+        font-size: 32px;
+        color: $color-white;
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    }
+    &__item-title{
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    &__item-descr{
+        margin: 0;
+        font-family: $font-accent;
+    }
+}
+@media (max-width: 1140px){
+    .stages{
+        padding-top: 60px;
+        padding-bottom: 20px;
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__item{
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .stages{
+        &__item-number{
+            width: 70px;
+            height: 70px;
+            font-size: 28px;
+        }
+        &__item-title{
+            font-size: 14px;
+        }
+        &__item-descr{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .stages{
+        &__item{
+            margin-bottom: 15px;
+        }
+        &__item-number{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            font-size: 24px;
+        }
+        &__item-title{
+            font-size: 12px;
+        }
+        &__item-descr{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .stages{
+        padding-top: 30px;
+        padding-bottom: 5px;
+        &__title{
+            margin-bottom: 25px;
+        }
+        &__item-number{
+            margin-right: 40px;
+        }
+    }
+}

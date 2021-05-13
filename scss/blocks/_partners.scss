@@ -1,0 +1,13 @@
+.partners{
+    padding-top: 50px;
+    overflow: hidden;
+    &__title{
+        margin-bottom: 25px;
+        color: $color-accent;
+    }
+}
+@media (max-width: 576px){
+    .partners{
+        padding-top: 40px;
+    }
+}

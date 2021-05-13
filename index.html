@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="my-container">
+            <div class="row justify-content-between">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-7">
+                    <a class="logo header__logo">
+                        «ООО&nbsp;Структура»
+                    </a>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-6 col-5">
+                    <div class="contacts header__contacts">
+                        <div class="contacts__item contacts__item--email">
+                            <a class="contacts__item-img" href="mailto:tzmk-69@yandex.ru">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.45228 5 3 5.45228 3 6V18C3 18.5477 3.45228 19 4 19H20C20.5477 19 21 18.5477 21 18V6C21 5.45228 20.5477 5 20 5H4ZM1 6C1 4.34772 2.34772 3 4 3H20C21.6523 3 23 4.34772 23 6V18C23 19.6523 21.6523 21 20 21H4C2.34772 21 1 19.6523 1 18V6Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.18076 5.42653C1.49748 4.97408 2.12101 4.86405 2.57346 5.18076L12 11.7793L21.4265 5.18076C21.879 4.86405 22.5025 4.97408 22.8192 5.42653C23.1359 5.87898 23.0259 6.50251 22.5735 6.81923L12.5735 13.8192C12.2291 14.0603 11.7709 14.0603 11.4265 13.8192L1.42653 6.81923C0.974083 6.50251 0.864048 5.87898 1.18076 5.42653Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a class="contacts__item-link" href="mailto:tzmk-69@yandex.ru">tzmk-69@yandex.ru</a>
+                        </div>
+                        <div class="contacts__item contacts__item--phone">
+                            <a class="contacts__item-img contacts__item-img--phone" href="tel:+79201554411">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7294C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5342 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.271 2.11999 4.18001C2.095 3.90347 2.12787 3.62477 2.21649 3.36163C2.30512 3.09849 2.44756 2.85669 2.63476 2.65163C2.82196 2.44656 3.0498 2.28271 3.30379 2.17053C3.55777 2.05834 3.83233 2.00027 4.10999 2.00001H7.10999C7.5953 1.99523 8.06579 2.16708 8.43376 2.48354C8.80173 2.79999 9.04207 3.23945 9.10999 3.72001C9.23662 4.68007 9.47144 5.62273 9.80999 6.53001C9.94454 6.88793 9.97366 7.27692 9.8939 7.65089C9.81415 8.02485 9.62886 8.36812 9.35999 8.64001L8.08999 9.91001C9.51355 12.4136 11.5864 14.4865 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1859 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </a>
+                            <div class="contacts__item-inner">
+                                <a class="contacts__item-link" href="tel:+79201554411">+7 (920) 155-44-11</a>
+                                <a class="contacts__item-link" href="tel:+79056084446">+7 (905) 608-44-46</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="header__nav nav">
+                        <button class="nav__btn btn-reset">
+                            <div class="nav__btn-img">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+                                    <path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03 c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
+                                    <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03 S379.58,180.455,372.939,180.455z"/>
+                                    <path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606 c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a class="nav__link" id="subNavOne" href="javascript:void(0);">О компании</a>
+                                <ul class="subnav__list list-reset" id="subNavOneList">
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Информация о нас</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Контакты</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Вакансии</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Блог</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" id="subNavTwo" href="#">Изготовление и монтаж</a>
+                                <ul class="subnav__list list-reset" id="subNavTwoList">
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Системы пожаротушения</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Колонны, прогоны, балки</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Закладные детали</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Анкерные группы</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Фермы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" id="subNavTree" href="#">Строительство</a>
+                                <ul class="subnav__list list-reset" id="subNavTreeList">
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Быстровозводимые здания</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Заборы</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Ограждения</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" id="subNavFour" href="#">Услуги</a>
+                                <ul class="subnav__list list-reset" id="subNavFourList">
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Плазменная резка</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a class="subnav__link" href="#">Разработка КМД</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="my-container">
+                <div class="row justify-content-between">
+                    <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-8 col-12">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Изготовим металлоконструкции для промышленного, гражданского и дорожного строительства</h1>
+                            <div class="hero__descr">
+                                <p class="hero__descr-item">Работаем с 2005 года</p>
+                                <p class="hero__descr-item">Полный расчёт стоимости проекта за 24 часа</p>
+                                <p class="hero__descr-item">Собственное производство</p>
+                                <p class="hero__descr-item">Выполнили более 300 проектов по всей РФ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="hero__form">
+                            <form class="hero-form" id="hero-form" action="#">
+                                <h4 class="hero-form__title">Рассчитать стоимость*</h4>
+                                <div class="hero-form__inner">
+                                    <input class="hero-form__input" name="name" type="text" placeholder="Имя">
+                                    <input class="hero-form__input" name="phone" type="tel" placeholder="Телефон">
+                                </div>
+                                <button type="submit" class="hero-form__btn btn-reset btn">Заказать расчёт</button>
+                                <p class="hero-form__descr">*Введите своё имя и номер телефона. Наш специалист свяжется с вами и уточнит данные для расчёта.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="my-container">
+                <div class="form">
+                    <form class="hero-form" action="#">
+                        <h4 class="hero-form__title">Рассчитать стоимость*</h4>
+                        <div class="hero-form__inner">
+                            <input class="hero-form__input" type="text" placeholder="Имя">
+                            <input class="hero-form__input" type="tel" placeholder="Телефон">
+                        </div>
+                        <button type="button" class="hero-form__btn btn-reset btn">Заказать расчёт</button>
+                        <p class="hero-form__descr">*Введите своё имя и номер телефона. Наш специалист свяжется с вами и уточнит данные для расчёта.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="my-container">
+                <h2 class="services__title title">Быстровозводимые здания которые мы строим</h2>
+                <div class="row g-4">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-1.png" alt="">
+                            <h5 class="services__item-title">Производственные здания</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-2.png" alt="">
+                            <h5 class="services__item-title">Ангары</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-3.png" alt="">
+                            <h5 class="services__item-title">Склады и складские помещения</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-4.png" alt="">
+                            <h5 class="services__item-title">Автомойки и шиномонтажи</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-5.png" alt="">
+                            <h5 class="services__item-title">Административные здания</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-6.png" alt="">
+                            <h5 class="services__item-title">Автосервисы</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-7.png" alt="">
+                            <h5 class="services__item-title">Магазины и торговые центры</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-8.png" alt="">
+                            <h5 class="services__item-title">Торговые павильоны</h5>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="services__item">
+                            <img class="services__item-img" src="./img/services/service-9.png" alt="">
+                            <h5 class="services__item-title">Здания для сельского хозяйства</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices">
+            <div class="my-container">
+                <h2 class="prices__title title">Стоимость быстровозводимых зданий</h2>
+                <div class="row mb-5 g-4">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-11">
+                        <div class="prices__item">
+                            <img class="prices__item-img" src="./img/prices/price-1.png" alt="">
+                            <p class="prices__item-descr">Полный комплект каркаса здания без монтажа —&nbsp;от&nbsp;2&nbsp;000&nbsp;₽/м²</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-11">
+                        <div class="prices__item">
+                            <img class="prices__item-img" src="./img/prices/price-2.png" alt="">
+                            <p class="prices__item-descr">Полный комплект неутепленного здания без монтажа —&nbsp;от&nbsp;4&nbsp;000&nbsp;₽/м²</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-11">
+                        <div class="prices__item">
+                            <img class="prices__item-img" src="./img/prices/price-3.png" alt="">
+                            <p class="prices__item-descr">Полный комплект утеплённого здания без монтажа —&nbsp;от&nbsp;6&nbsp;000&nbsp;₽/м²</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-11">
+                        <div class="prices__item">
+                            <img class="prices__item-img" src="./img/prices/price-4.png" alt="">
+                            <p class="prices__item-descr">Конструкция арочного типа без монтажа —&nbsp;от&nbsp;2&nbsp;200&nbsp;₽/м² (Неутепленное исполнение) —&nbsp;от&nbsp;4 500&nbsp;₽/м² (Утеплённое исполнение)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="prices__btn btn-reset btn">Смотреть все цены</button>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <div class="my-container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-10">
+                        <h2 class="order__title title">Заказать расчёт стоимости</h2>
+                        <form class="order-form" action="#">
+                            <div class="row mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-4 mb-1">
+                                <h5 class="order-form__title">Размеры здания</h5>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                    <input class="order-form__input" type="text" placeholder="Ширина(м)">
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                    <input class="order-form__input" type="text" placeholder="Длина(м)">
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                    <input class="order-form__input" type="text" placeholder="Высота(м)">
+                                </div>
+                            </div>
+                            <div class="row mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-4 mb-1">
+                                <h5 class="order-form__title">Регион строительства</h5>
+                                <div class="col-xxl-12">
+                                    <input class="order-form__input" type="text" placeholder="Область/Край/Город">
+                                </div>
+                            </div>
+                            <div class="row mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-4 mb-1">
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                    <h5 class="order-form__title">Обшивка здания</h5>
+                                    <select class="order-form__select">
+                                        <option value="Нет">Нет</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                                    <h5 class="order-form__title">Телефон</h5>
+                                    <input class="order-form__input" type="text" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <p class="order-form__choice">
+                                <input class="order-form__choice-checkbox" type="checkbox">
+                                Требуется монтаж от вашего строительного подразделения или партнёрских организаций
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <button class="order-form__btn btn-reset btn">Получить расчёт</button>
+                            </div>
+                            <p class="order-form__agreement">
+                                *Нажимая на кнопку «Получить расчёт», вы даёте согласие на обработку своих персональных данных.<br>
+                                Для получения подробной информации в разделе «Политика конфиденциальности»<br>
+                                Расчёт стоимости производиться на основе типовых проектов в стандартной комлектации.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="my-container">
+                <h2 class="partners__title title">Наши партнёры</h2>
+                <div class="row justify-content-between align-items-center gx-5 gy-3">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-1.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-2.png" alt="">
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-3.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-4.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-5.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-6.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-7.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-8.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-9.png" alt="">
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img class="partners__img" src="./img/partners/partner-10.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="works">
+            <div class="my-container">
+                <h2 class="works__title title">Наши работы</h2>
+                <div class="row g-4 mb-5">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="works__item">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <img class="works__item-img" src="./img/works/work-1.png" alt="">
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <h4 class="works__item-title">OZON (2016–2018)</h4>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Адрес:</span>
+                                        г. Тверь, ул. Боровлево
+                                    </p>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Изготовление:</span>
+                                        надколонники, балки перекрытия, фермы, связи по фермам, фахверк, прогоны
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="works__item">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <img class="works__item-img" src="./img/works/work-2.png" alt="">
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <h4 class="works__item-title">Toyota Центр Тверь (2010)</h4>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Адрес:</span>
+                                        г. Тверь, Московское шоссе
+                                    </p>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Изготовление:</span>
+                                        колонны, связи, прогоны, фермы, фахверк, вспомогательные сооружения
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="works__item">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <img class="works__item-img" src="./img/works/work-3.png" alt="">
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <h4 class="works__item-title">ДКС Тверь (2019)</h4>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Адрес:</span>
+                                        г. Тверь, ул. Коняевская
+                                    </p>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Изготовление:</span>
+                                        связи, прогоны, фахверк, вспомогательные сооружения, косоуры
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="works__item">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <img class="works__item-img" src="./img/works/work-4.png" alt="">
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <h4 class="works__item-title">Научно-производственный комплекс в Дубне (2017)</h4>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Адрес:</span>
+                                        Московская обл. г. Дубна, Территория ОЭЗ
+                                    </p>
+                                    <p class="works__item-text">
+                                        <span class="works__item-text--bold">Изготовление:</span>
+                                        прогоны, Связи, Фермы, Фахверк
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="prices__btn btn-reset btn">Смотреть все работы</button>
+                </div>
+            </div>
+        </section>
+        <section class="stages">
+            <div class="my-container">
+                <div class="row">
+                    <div class="offset-xxl-2 offset-xl-2 col-xxl-8 col-xl-9 col-lg-12">
+                        <h2 class="stages__title title">Этапы работ</h2>
+                        <div class="row">
+                            <div class="col-xxl-8 col-xl-7 col-lg-8 col-md-7 col-sm-7">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">1</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Остьвьте заявку</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-5 col-lg-4 col-md-5 col-sm-5">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">2</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Уточнение деталей</h5>
+                                        <p class="stages__item-descr">45 минут</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-8 col-xl-7 col-lg-8 col-md-7 col-sm-7">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">3</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Подготовка коммерческого предложения</h5>
+                                        <p class="stages__item-descr">1 день</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-5 col-lg-4 col-md-5 col-sm-5">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">4</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Создание проекта</h5>
+                                        <p class="stages__item-descr">5 дней</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-8 col-xl-7 col-lg-8 col-md-7 col-sm-7">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">5</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Производство конструкций</h5>
+                                        <p class="stages__item-descr">14 дней</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-5 col-lg-4 col-md-5 col-sm-5">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">6</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Фундамент</h5>
+                                        <p class="stages__item-descr">от 10 дней</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-8 col-xl-7 col-lg-8 col-md-7 col-sm-7">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">7</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Доставка и монтаж</h5>
+                                        <p class="stages__item-descr">от 14 дней</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-5 col-lg-4 col-md-5 col-sm-5">
+                                <div class="stages__item">
+                                    <span class="stages__item-number">8</span>
+                                    <div class="stages__item-inner">
+                                        <h5 class="stages__item-title">Сдача объекта</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="my-container">
+                <h2 class="benefits__title title">Почему стоит выбрать нас</h2>
+                <div class="benefits__descr">
+                    <p class="benefits__descr-item">Наша компания специализируется на производстве и монтаже металлоконструкций для промышленного и гражданского строительства.</p>
+                    <p class="benefits__descr-item">Мы имеем собственное производство, и штат высококвалифицированных сотрудников различного профиля.</p>
+                    <p class="benefits__descr-item">Гарантируем качество нашей работы на всех этапах строительства.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="benefits__item">
+                            <p class="benefits__item-text"><span class="benefits__item-text--number">15</span> лет</p>
+                            <p class="benefits__item-descr">Опыт работы</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="benefits__item">
+                            <p class="benefits__item-text"><span class="benefits__item-text--number">60</span> регионов</p>
+                            <p class="benefits__item-descr">Работаем по всей стране</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="benefits__item">
+                            <p class="benefits__item-text"><span class="benefits__item-text--number">10</span> лет</p>
+                            <p class="benefits__item-descr">Гарантия качества</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="benefits__item">
+                            <p class="benefits__item-text"><span class="benefits__item-text--number">24</span> часа</p>
+                            <p class="benefits__item-descr">Полный расчёт стоимости</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payment">
+            <div class="my-container">
+                <div class="row">
+                    <div class="offset-xxl-3 col-xxl-6 offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-1 col-md-10 offset-sm-1 col-sm-10 col-12">
+                        <h2 class="payment__title title">Онлайн расчёт стоимости</h2>
+                        <div class="d-flex justify-content-center">
+                            <p class="payment__descr">Получите стоимость строительства вашего здания в течении 24-х часов</p>
+                        </div>
+                        <form class="payment-form" id="payment-form" action="#">
+                            <div class="payment-form__step payment-form__step--first">
+                                <div class="row gy-2">
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="payment-form__title">Длина(м)</h6>
+                                            <span class="payment-form__value" id="long-value"></span>
+                                        </div>
+                                        <input class="payment-form__range" id="long-range" type="range" min="1" max="100" oninput="longRange()">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="payment-form__title">Высота стен(м)</h6>
+                                            <span class="payment-form__value" id="height-value"></span>
+                                        </div>
+                                        <input class="payment-form__range" id="height-range" type="range" min="1" max="100" oninput="heightRange()">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="payment-form__title">Ширина(м)</h6>
+                                            <span class="payment-form__value" id="width-value"></span>
+                                        </div>
+                                        <input class="payment-form__range" id="width-range" type="range" min="1" max="100" oninput="widthRange()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-form__step payment-form__step--two">
+                                <div class="row mb-5 gy-3">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                        <h6 class="payment-form__title">Исполнение</h6>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Однослойное
+                                        </div>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Двуслойное
+                                        </div>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Двуслойное с утеплителем
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                        <h6 class="payment-form__title">Материалы стен</h6>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Тент
+                                        </div>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Профлист
+                                        </div>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Сендвич-панель
+                                        </div>
+                                        <div class="payment-form__radio-inner">
+                                            <input class="payment-form__radio" type="radio">
+                                            Индивидуальный материал
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h6 class="payment-form__title">Параметры ворот</h6>
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                        <input class="payment-form__input" type="text" placeholder="Количество">
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                        <input class="payment-form__input" type="text" placeholder="Ширина(м)">
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                        <input class="payment-form__input" type="text" placeholder="Высота(м)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-form__step payment-form__step--three">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h6 class="payment-form__title">Ваше имя/наименование организации</h6>
+                                        <input class="payment-form__input" type="text" placeholder="Например, Дмитрий">
+                                    </div>
+                                </div>
+                                <div class="row mb-4 gy-4">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <h6 class="payment-form__title">Телефон</h6>
+                                        <input class="payment-form__input" type="tel" placeholder="+7">
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <h6 class="payment-form__title">Почта</h6>
+                                        <input class="payment-form__input" type="email" placeholder="Пример example@mail.ru">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <div class="col-12">
+                                        <h6 class="payment-form__title">Регион строительства</h6>
+                                        <input class="payment-form__input" type="text" placeholder="Например, Тверь">
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="payment-form__nav">
+                                <p class="payment-form__nav-step">
+                                    <span class="payment-form__nav-step--value">1</span> из 3
+                                </p>
+                                <div class="payment-form__nav-inner">
+                                    <a class="payment-form__nav-back" href="#">Назад</a>
+                                    <button class="payment-form__nav-next btn-reset btn" id="next" type="button">Далее</button>
+                                    <input class="payment-form__nav-submit btn-reset btn" type="submit" value="Отправить">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="my-container">
+            <div class="row">
+                <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+                    <div class="footer__inner">
+                        <a class="logo footer__logo">
+                            «ООО&nbsp;Структура»
+                        </a>
+                        <p class="footer__copyright">
+                            &copy;2021. «ООО Структура»<br>
+                            Все права защищены.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-4 col-sm-12 col-12 ps-xxl-5">
+                    <div class="row g-lg-5 g-md-4 g-3">
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer__nav">
+                                <h5 class="footer__nav-title">О компании</h5>
+                                <div class="footer__nav-list">
+                                    <a class="footer__nav-link" href="#">Информация о нас</a>
+                                    <a class="footer__nav-link" href="#">Контакты</a>
+                                    <a class="footer__nav-link" href="#">Вакансии</a>
+                                    <a class="footer__nav-link" href="#">Блог</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer__nav">
+                                <h5 class="footer__nav-title">Изготовление и монтаж</h5>
+                                <div class="footer__nav-list">
+                                    <a class="footer__nav-link" href="#">Системы пожаротушения</a>
+                                    <a class="footer__nav-link" href="#">Колонны, прогоны, балки</a>
+                                    <a class="footer__nav-link" href="#">Закладные детали</a>
+                                    <a class="footer__nav-link" href="#">Анкерные группы</a>
+                                    <a class="footer__nav-link" href="#">Фермы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer__nav">
+                                <h5 class="footer__nav-title">Строительство</h5>
+                                <div class="footer__nav-list">
+                                    <a class="footer__nav-link" href="#">Быстровозводимые здания</a>
+                                    <a class="footer__nav-link" href="#">Заборы</a>
+                                    <a class="footer__nav-link" href="#">Ограждения</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer__nav">
+                                <h5 class="footer__nav-title">Услуги</h5>
+                                <div class="footer__nav-list">
+                                    <a class="footer__nav-link" href="#">Плазменная резка</a>
+                                    <a class="footer__nav-link" href="#">Разработка КМД</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
+                    <div class="contacts footer__contacts">
+                        <div class="contacts__item contacts__item--email">
+                            <a class="contacts__item-img" href="mailto:tzmk-69@yandex.ru">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.45228 5 3 5.45228 3 6V18C3 18.5477 3.45228 19 4 19H20C20.5477 19 21 18.5477 21 18V6C21 5.45228 20.5477 5 20 5H4ZM1 6C1 4.34772 2.34772 3 4 3H20C21.6523 3 23 4.34772 23 6V18C23 19.6523 21.6523 21 20 21H4C2.34772 21 1 19.6523 1 18V6Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.18076 5.42653C1.49748 4.97408 2.12101 4.86405 2.57346 5.18076L12 11.7793L21.4265 5.18076C21.879 4.86405 22.5025 4.97408 22.8192 5.42653C23.1359 5.87898 23.0259 6.50251 22.5735 6.81923L12.5735 13.8192C12.2291 14.0603 11.7709 14.0603 11.4265 13.8192L1.42653 6.81923C0.974083 6.50251 0.864048 5.87898 1.18076 5.42653Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a class="contacts__item-link" href="mailto:tzmk-69@yandex.ru">tzmk-69@yandex.ru</a>
+                        </div>
+                        <div class="contacts__item contacts__item--phone">
+                            <a class="contacts__item-img contacts__item-img--phone" href="tel:+79201554411">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7294C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5342 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.271 2.11999 4.18001C2.095 3.90347 2.12787 3.62477 2.21649 3.36163C2.30512 3.09849 2.44756 2.85669 2.63476 2.65163C2.82196 2.44656 3.0498 2.28271 3.30379 2.17053C3.55777 2.05834 3.83233 2.00027 4.10999 2.00001H7.10999C7.5953 1.99523 8.06579 2.16708 8.43376 2.48354C8.80173 2.79999 9.04207 3.23945 9.10999 3.72001C9.23662 4.68007 9.47144 5.62273 9.80999 6.53001C9.94454 6.88793 9.97366 7.27692 9.8939 7.65089C9.81415 8.02485 9.62886 8.36812 9.35999 8.64001L8.08999 9.91001C9.51355 12.4136 11.5864 14.4865 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1859 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </a>
+                            <div class="contacts__item-inner">
+                                <a class="contacts__item-link" href="tel:+79201554411">+7 (920) 155-44-11</a>
+                                <a class="contacts__item-link" href="tel:+79056084446">+7 (905) 608-44-46</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

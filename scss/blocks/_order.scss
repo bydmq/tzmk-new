@@ -1,0 +1,111 @@
+.order{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: $color-primary;
+    &__title{
+        margin-bottom: 45px;
+        color: $color-white;
+    }
+}
+.order-form{
+    &__title{
+        margin: 0;
+        margin-bottom: 15px;
+        font-family: $font-accent;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $color-secondary;
+    }
+    &__input{
+        width: 100%;
+        height: 40px;
+        border: 3px solid $color-secondary-light;
+        padding-left: 20px;
+        &::placeholder{
+            font-family: $font-accent;
+            font-size: 16px;
+            line-height: 130%;
+            color: $color-secondary-dark;
+        }
+    }
+    &__select{
+        width: 100%;
+        height: 40px;
+    }
+    &__choice{
+        display: flex;
+        margin: 0;
+        margin-bottom: 50px;
+        font-family: $font-accent;
+        font-size: 14px;
+        line-height: 140%;
+        color: $color-white;
+    }
+    &__choice-checkbox{
+        margin-right: 10px;
+    }
+    &__btn{
+        width: 300px;
+        margin-bottom: 30px;
+        background-color: $color-yellow;
+    }
+    &__agreement{
+        margin: 0;
+        font-family: $font-accent;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: $color-secondary;
+    }
+}
+@media (max-width: 1140px){
+    .order{
+        &__title{
+            font-size: 28px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .order-form{
+        &__agreement{
+            font-size: 13px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .order{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__title{
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+    }
+    .order-form{
+        &__title{
+            font-size: 10px;
+        }
+        &__input{
+            margin-bottom: 10px;
+            &::placeholder{
+                font-size: 14px;
+            }
+        }
+        &__select{
+            margin-bottom: 10px;
+        }
+        &__choice{
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        &__btn{
+            width: 280px;
+            margin: 0;
+        }
+        &__agreement{
+            display: none;
+        }
+    }
+}

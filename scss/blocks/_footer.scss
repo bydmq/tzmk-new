@@ -1,0 +1,111 @@
+.footer{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: $color-primary;
+    &__logo{
+        position: relative;
+        margin-bottom: 35px;
+        padding-bottom: 15px;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 230px;
+            height: 1px;
+            background-color: $color-secondary-light;
+        }
+    }
+    &__copyright{
+        margin: 0;
+        font-family: $font-accent;
+        font-size: 14px;
+        color: $color-secondary-dark;
+    }
+    &__nav-title{
+        margin: 0;
+        margin-bottom: 15px;
+        font-family: $font-accent;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-white;
+    }
+    &__nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    &__nav-link{
+        display: block;
+        margin-bottom: 5px;
+        font-family: $font-accent;
+        font-size: 14px;
+        text-decoration: underline;
+        color: $color-secondary-dark;
+    }
+    &__contacts{
+        flex-direction: column;
+        & .contacts{
+            &__item{
+                &--email{
+                    order: 2;
+                    margin-right: 0;
+                }
+                &--phone{
+                    order: 1;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1140px){
+    .footer{
+        &__logo{
+            &::after{
+                width: 170px;
+            }
+        }
+        &__contacts{
+            & .contacts{
+                &__item{
+                    &--phone{
+                        margin-bottom: 40px;
+                    }
+                }
+                &__item-img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .footer{
+        &__contacts{
+            position: absolute;
+            top: 0;
+            right: 15px;
+            & .contacts{
+                &__item{
+                    &--phone{
+                        margin-bottom: 20px;
+                    }
+                }
+                &__item-img{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px){
+    .footer{
+        &__copyright{
+            margin-bottom: 20px;
+        }
+        &__nav-title{
+            font-size: 14px;
+        }
+    }
+}
