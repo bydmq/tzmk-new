@@ -1,0 +1,20 @@
+.contacts-us{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__title{
+        margin-bottom: 40px;
+        color: $color-accent;
+    }
+    &__map{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .contacts-us{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__title{
+            margin-bottom: 20px;
+        }
+    }
+}
